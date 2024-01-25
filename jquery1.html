@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('button').eq(0).click(function() {
+                $('div').slideUp(2000);
+            })
+            $('button').eq(1).click(function() {
+                $('div').slideDown(2000);
+            })
+            $('button').eq(2).click(function() {
+                $('div').slideToggle(2000);
+            })
+        })
+    </script>
+    <style>
+        div {
+            background-color: orange;
+            color: blue;
+            padding: 10px;
+            border-radius: 10px;
+            margin: left;
+            width: 200px;
+        }
+        
+        button {
+            background-color: red;
+            font-weight: bold;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <centre>
+        <div>EditPlus is a text editor for Windows with built-in FTP, FTPS and sftp capabilities. While it can serve as a good Notepad replacement, it also offers many powerful features for Web page authors and programmers</div>
+        <br><br>
+        <button>slide up</button>
+        <button>slide down</button>
+        <button>slide toggle</button>
+    </centre>
+
+</body>
+
+</html>
